@@ -79,3 +79,54 @@ Bu iş, farklı programlar aracılığıyla çeşitli işlemler gerçekleştirir
 
 ## İş Tanımı
 Bu iş, IDCAMS programıyla önceki çıktılarımı siler ve ilk olarak alt programımı ve sonra da ana programımı derler. Düzgün bir şekilde derleme olduysa ana programımı çalıştırır. Ana program, girdi veri setlerini işleyerek çıktı ve hatalı kayıtlar oluşturur. İşin sonunda, `QSAM.INVPRO` ve `QSAM.OUTPRO` çıktılarını oluşturulur.
+
+## QSAM.OUTPRO
+
+```
+ FINAL ASSIGNMENT                          Author: TOLGA KAYIS
+ Year 2023  Month 07  Day 14
+ 
+ PROCTYP-KEY  RC  Outcome                       From First and Lastname       To First and Lastname
+ -----------  --  ------------------------      ------------------------      ------------------------
+ R 19601 949  00  READ SUCCESSFUL               ABED           NADIR
+ R 13567 949  00  READ SUCCESSFUL               ROBERT         OPPENHEIMER
+ R 34343 434  23  RECORD NOT FOUND
+ W 42424 242  00  NEW RECORD WRITTEN                                          TOLGA          KAYIS
+ W 14325 840  22  WRITE UNSUCCESSFUL RECFND
+ U 15801 840  00  RECORD UPDATED                M E H M E T    AYDIN          MEHMET         EYDIN
+ U 18738 978  00  RECORD UPDATED                D E NI S       VILLENEUVE     DENIS          VILLINIUVI
+ U 12803 949  00  RECORD UPDATED                A N N IE       EDISON         ANNIE          IDISON
+ U 13548 964  23  RECORD NOT FOUND
+ D 14302 840  00  DELETE SUCCESSFUL             TROY           BARNES
+ D 12345 678  23  DELETE UNSUCCESSFUL RECNOTFND
+ R 10046 949  00  READ SUCCESSFUL               HARRISON       FORD
+ U 10032 840  00  RECORD UPDATED                R UF U S       SEWELL         RUFUS          SIWILL
+ U 10095 840  00  RECORD UPDATED                T O M          CRUISE         TOM            CRUISI
+ R 10042 978  00  READ SUCCESSFUL               CARY-HIROYUKI  TAGAWA
+ U 10005 840  23  RECORD NOT FOUND
+ W 10095 840  22  WRITE UNSUCCESSFUL RECFND
+ D 10045 949  00  DELETE SUCCESSFUL             JENNIFER       LAWRENCE
+ D 43567 768  23  DELETE UNSUCCESSFUL RECNOTFND
+ U 10054 444  00  RECORD UPDATED                Y U N US       TEMUR          YUNUS          TIMUR
+ D 54767 687  23  DELETE UNSUCCESSFUL RECNOTFND
+ R 11704 978  00  READ SUCCESSFUL               GEORGE         CARLIN
+ W 10045 949  00  NEW RECORD WRITTEN                                          TOLGA          KAYIS
+ W 54390 570  00  NEW RECORD WRITTEN                                          TOLGA          KAYIS
+ R 10070 978  00  READ SUCCESSFUL               CHRISTOPHER    NOLAN
+ U 10459 840  00  RECORD UPDATED                I D R I S      ELBA           IDRIS          ILBE
+ U 15078 965  00  RECORD UPDATED                MADS           MIKKELSEN      MADS           MIKKILSIN
+ U 15969 480  00  RECORD UPDATED                A NT HON Y     HOPKINS        ANTHONY        HOPKINS
+ W 98743 949  00  NEW RECORD WRITTEN                                          TOLGA          KAYIS
+ W 10009 788  00  NEW RECORD WRITTEN                                          TOLGA          KAYIS
+```
+## QSAM.INVPRO
+```
+INVALID PROCESS TYPE-KEY
+-------------
+H  53456  578
+J  32432  423
+E  43543  534
+P  10045  940
+Q  54386  546
+E  87435  789
+```
